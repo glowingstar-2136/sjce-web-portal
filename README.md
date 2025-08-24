@@ -1,116 +1,77 @@
-# SJCE Student Web Portal
+Student Web Portal: Yuvi’s Edition 💻👑
 
-![SJCE Portal Preview](path-to-screenshot.png)
+A modern and enhanced college portal website, designed and developed to provide students, teachers, and administrators with seamless access to academic resources and management tools.
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation](#installation)
-5. [Running the Project](#running-the-project)
-6. [Project Structure](#project-structure)
-7. [Screenshots](#screenshots)
-8. [Future Improvements](#future-improvements)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [Contact](#contact)
+Overview
 
----
+This project is a full-stack web application that improves the usability and functionality of a typical college portal. Unlike conventional portals, this version offers:
 
-## Project Overview
-The **SJCE Student Web Portal** is a web application designed for students, staff, and admin users at St. Joseph's College of Engineering. It provides:
+Dedicated logins for students, teachers, and admins.
 
-- Easy access to student and staff resources
-- Dedicated login portals for students, staff, and admin
-- A modern and responsive UI
-- Quick navigation to different sections of the college portal
+User-friendly interface for academic and administrative tasks.
 
-This project was built during my internship at **Trios Technologies Pvt Ltd**. Unlike the official portal, this version is cleaner, faster, and more user-friendly.  
+Interactive dashboard with quick access to relevant resources.
 
----
+Responsive design that works across devices.
 
-## Features
-- 🎓 Student Portal: View courses, grades, and announcements
-- 🧑‍🏫 Staff Portal: Manage student data and course content
-- 🔒 Admin Login: Manage portal users and access control
-- Responsive design for desktops and mobile devices
-- Animated buttons and hover effects for better UX
+Technologies Used
 
----
+The project is built using the following technologies:
 
-## Technologies Used
-- **Frontend:** HTML, CSS, JavaScript, JSP
-- **Backend:** Java Servlets
-- **Server:** Apache Tomcat (or compatible servlet container)
-- **Database:** MySQL or any supported relational DB
-- **Development Tools:** NetBeans IDE
+Frontend:
 
----
+HTML5 & CSS3
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/sjce-web-portal.git
-Open the project in NetBeans IDE.
+JavaScript
 
-Ensure Apache Tomcat is installed and configured in NetBeans.
+JSP (JavaServer Pages)
 
-Set up the database if required (optional, depending on features used).
+Backend:
 
-Running the Project
-Start your Tomcat server in NetBeans.
+Java Servlets
 
-Right-click on the project → Run.
+Database:
 
-The portal should open in your default browser at:
+MySQL / any relational database supported by Java JDBC
 
-bash
-Copy
-Edit
-http://localhost:8080/sjce-web-portal
-Use the respective login pages for students, staff, or admin:
+Deployment:
 
-student_log.jsp
+Local server (Apache Tomcat, or any Java servlet container)
 
-staff_login.jsp
+Features
 
-admin_login.jsp
+Student login to access personalized course information, attendance, and grades.
 
-Project Structure
-bash
-Copy
-Edit
-sjce-web-portal/
+Teacher login to manage courses, assignments, and student performance.
+
+Admin login for managing users and maintaining the portal database.
+
+Secure session management using Java servlets.
+
+Folder Structure
+student-web-portal/
 │
-├── index.html                # Main landing page
-├── image/                    # Images used in the portal
-├── student_log.jsp           # Student login page
-├── staff_login.jsp           # Staff login page
-├── admin_login.jsp           # Admin login page
-├── src/                      # Java source files
-│   └── servlets/             # Java Servlets
-├── WEB-INF/                  # Web application configuration
-│   └── web.xml
-└── README.md                 # Project documentation
-Screenshots
-Add screenshots of your portal pages here for better clarity.
+├── src/                  # Java source files (Servlets, utilities)
+├── WebContent/           # JSP files, HTML templates, CSS, images
+├── WEB-INF/              # Deployment descriptor (web.xml), libraries
+├── README.md             # Project overview
+└── database/             # Optional SQL scripts for initial setup
 
-Future Improvements
-Full integration with a database for dynamic student and staff data
+How to Run Locally
 
-Notification system for announcements
+Install Java JDK and Apache Tomcat.
 
-Enhanced dashboard for admin users
+Clone the repository:
 
-Mobile app companion
+git clone https://github.com/YOUR_USERNAME/student-web-portal.git
 
-Contributing
-Contributions, issues, and feature requests are welcome! Feel free to fork the repository and create a pull request.
 
-License
-This project is free to use for learning purposes.
+Import the project into NetBeans or Eclipse as a Web Application.
 
-Contact
-Yuvashree C
+Configure your database connection in the servlets or utility classes.
 
-GitHub: glowingstar-2136
+Build and deploy on Tomcat server.
+
+Access the portal at:
+
+http://localhost:8080/student-web-portal/
