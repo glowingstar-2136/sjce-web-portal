@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+        }
+
+        li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 25px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        li a:hover, .active {
+            background-color: deeppink;
+            border-radius: 5px;
+        }
+
+        .form-container {
+            background-color: #2c2c2c;
+            width: 50%;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #f8c8dc;
+        }
+
+        input[type="text"],
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: deeppink;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff69b4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f8c8dc;
+            margin-top: 20px;
+        }
+        
+ /* Password Input Styling */
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: #1a1a1a;
+    color: #ffb6c1;
+    border: 2px solid deeppink;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="password"]:focus {
+    box-shadow: 0 0 10px deeppink;
+    background-color: #2c2c2c;
+}
+
+/* Image Upload Styling */
+input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #f8c8dc;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+    transition: border-color 0.3s ease;
+}
+
+input[type="file"]:hover {
+    border-color: deeppink;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="student_home.jsp">Home</a></li>
+        <li><a class="active" href="index.html">Student Register</a></li>
+        <li><a href="student_log.jsp">Student Login</a></li>
+        <li><a href="staff_register.html">Staff Register</a></li>
+        <li><a href="staff_login.html">Staff Login</a></li>
+    </ul>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="Registration_Form" enctype="multipart/form-data" method="post" class="form-container" onsubmit="return Validate_Data(true)">
+        
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" oninput="handleInput('name')">
+        </div>
+
+        <div class="form-group">
+            <label for="phone_num">Phone Number</label>
+            <input type="text" name="phone_num" id="phone_num" oninput="handleInput('phone_num')">
+        </div>
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="text" name="age" id="age" oninput="handleInput('age')">
+        </div>
+
+        <div class="form-group">
+            <label for="blood_group">Blood Group</label>
+            <input type="text" name="blood_group" id="blood_group" oninput="handleInput('blood_group')">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" name="address" id="address" oninput="handleInput('address')">
+        </div>
+
+        <div class="form-group">
+            <label for="Image">Upload Image</label>
+            <input type="file" name="Image" id="Image" onchange="handleInput('image')" required>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department</label>
+            <input type="text" name="department" id="department" oninput="handleInput('department')">
+        </div>
+
+        <div class="form-group">
+            <label for="college">College</label>
+            <input type="text" name="college" id="college" oninput="handleInput('college')">
+        </div>
+
+        <div class="form-group">
+            <label for="year">Year</label>
+            <input type="text" name="year" id="year" oninput="handleInput('year')">
+        </div>
+
+        <div class="form-group">
+            <label for="mail_id">Mail-Id</label>
+            <input type="text" name="mail_id" id="mail_id" oninput="handleInput('mail_id')">
+        </div>
+        
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" oninput="handleInput('password')">
+        </div>
+            
+
+        <div class="form-group" style="text-align: center;">
+            <input type="submit" value="REGISTER">
+        </div>
+    </form>
+</body>
+</html>

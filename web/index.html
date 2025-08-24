@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to SJCE Portal</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('image/sjce_3.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: #2f1d1d; /* brownish-black */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: auto;
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+            animation: fadeIn 1s ease-out forwards;
+            opacity: 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-top: 60px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: normal;
+            margin: 5px 0;
+        }
+
+        .portal-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin: 30px 0;
+        }
+
+        .btn {
+            background: linear-gradient(to right, #3d3d3d, #2a2a2a);
+            padding: 20px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 12px;
+            color: #ffffff;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #505050, #383838);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08);
+        }
+
+        a.admin-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: #fff;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 0 10px #888;
+            transition: 0.3s ease;
+        }
+
+        a.admin-link:hover {
+            background: #444;
+            box-shadow: 0 0 12px #aaa;
+        }
+
+        footer {
+            margin-top: auto;
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .btn {
+                width: 80%;
+                padding: 15px 20px;
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a class="admin-link" href="admin_login.jsp">Admin Login</a>
+
+    <h1>Welcome to St. Joseph's College of Engineering</h1>
+    <h2>Off, Old Mahabalipuram Road, Kamaraj Nagar, Semmancheri, Chennai, Tamil Nadu 600119</h2>
+    <h2><b>Please choose your Portal</b></h2>
+
+    <div class="portal-buttons">
+        <a class="btn" href="student_log.jsp">🎓 Student Portal</a>
+        <a class="btn" href="staff_login.jsp">🧑‍🏫 Staff Portal</a>
+    </div>
+
+    <footer>
+        <h3><b>&copy; 2025 SJCE Portal | Coded with 💖 by Yuvashree C</b><h3>
+    </footer>
+</body>
+</html>
