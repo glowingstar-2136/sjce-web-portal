@@ -7,7 +7,7 @@ This portal was developed during my internship at **Trios Technologies Pvt Ltd**
 ---
 
 ## **✨ Technologies Used**
-- **Frontend:** HTML, CSS, JavaScript, JSP  
+- **Frontend:** HTML, CSS(Tailwind), JavaScript, JSP  
 - **Backend:** Java Servlets  
 - **Database:** MySQL (or any SQL database you connected)  
 - **Deployment:** Local server (e.g., Apache Tomcat via NetBeans)  
